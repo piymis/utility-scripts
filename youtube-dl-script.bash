@@ -1,5 +1,13 @@
 #!/bin/bash
 # youtube-dl-script : A script to make downloading videos wasy using youtube-dl
+# ----- Usage -----
+# <script> refers to this script's executable name, eg: ./youtube-dl-script.bash
+# 
+# => Download playlist:
+#    <script> --playlist <playlist_key> [<file_dest>]
+#       where
+#               <playlist_key> : youtube playlist unique identfier, usually present at the end of the playlist url.
+#               <file_dest> : destination path where to save the playlist.
 
 shell_command="youtube-dl -o"
 if ! [ -x "$(command -v youtube-dl)" ]; then
